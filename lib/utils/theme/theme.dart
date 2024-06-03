@@ -1,4 +1,4 @@
-
+import 'package:ecommerce_app/utils/constants/app_colors.dart';
 import 'package:ecommerce_app/utils/theme/custom_theme/appbar_theme.dart';
 import 'package:ecommerce_app/utils/theme/custom_theme/bottom_sheet_theme.dart';
 import 'package:ecommerce_app/utils/theme/custom_theme/checkbox_theme.dart';
@@ -17,7 +17,7 @@ class ThemeApp {
     fontFamily: 'Cairo',
     brightness: Brightness.light,
     primaryColor: Colors.blue,
-    textTheme:  TextThemeApp.lightTextTheme,
+    textTheme: TextThemeApp.lightTextTheme,
     chipTheme: ChipThemeApp.lightChipTheme,
     scaffoldBackgroundColor: Colors.white,
     appBarTheme: AppBarThemeApp.lightAppBarTheme,
@@ -32,9 +32,9 @@ class ThemeApp {
     fontFamily: 'Cairo',
     brightness: Brightness.light,
     primaryColor: Colors.blue,
-    textTheme:  TextThemeApp.darkTextTheme,
+    textTheme: TextThemeApp.darkTextTheme,
     chipTheme: ChipThemeApp.darkChipTheme,
-    scaffoldBackgroundColor: Colors.black,
+    scaffoldBackgroundColor: AppColors.black,
     appBarTheme: AppBarThemeApp.darkAppBarTheme,
     checkboxTheme: CheckboxThemeApp.darkCheckboxTheme,
     bottomSheetTheme: BottomSheetThemeApp.darkBottomSheetTheme,

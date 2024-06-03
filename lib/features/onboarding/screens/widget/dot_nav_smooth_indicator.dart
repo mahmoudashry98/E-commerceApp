@@ -13,13 +13,13 @@ class DotNavSmoothIndicator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final controller = OnBoardingController.instance;
-    final isDark = HelperFunctionsApp.isDarkMode(context);
+    final dark = AppHelperFunctions.isDarkMode(context);
     return Positioned(
       left: AppSize.defaultSpacing,
       bottom: AppDeviceUtils.getBottomNavBarHeight() + 25,
       child: SmoothPageIndicator(
         effect: ExpandingDotsEffect(
-            activeDotColor: isDark ? AppColors.darkColor : AppColors.lightColor,
+            activeDotColor: dark ? AppColors.darkColor : AppColors.lightColor,
             dotHeight: 6),
         controller: controller.pageController,
         onDotClicked: controller.dotNavigationClick,

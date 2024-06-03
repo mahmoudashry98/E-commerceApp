@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 
-class HelperFunctionsApp {
+class AppHelperFunctions {
   static void showSnackBar(String message) {
     ScaffoldMessenger.of(Get.context!).showSnackBar(
       SnackBar(
@@ -87,5 +87,4 @@ class HelperFunctionsApp {
     }
     return wrappedList;
   }
-
 }

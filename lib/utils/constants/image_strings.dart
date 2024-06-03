@@ -1,6 +1,7 @@
 class ImageStrings{
 
-  static const String logo = 'assets/images/logo.png';
+  static const String logoDark = 'assets/logos/logo-black.png';
+  static const String logoLight = 'assets/logos/logo-white.png';
   
   ///onBoarding
   static const String onBoarding1 = 'assets/images/sammy-line-sailor-on-mast-looking-through-telescope.gif';

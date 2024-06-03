@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../utils/constants/image_strings.dart';
-import '../../../utils/constants/text_string.dart';
+import '../../../utils/constants/app_strings.dart';
 import 'widget/next_button.dart';
 import 'widget/onboarding_page.dart';
 import 'widget/skip_button.dart';
@@ -23,24 +23,23 @@ class OnBoardingScreen extends StatelessWidget {
           PageView(
             controller: controller.pageController,
             onPageChanged: (value) {
-              
               controller.updatePageIndicator(value);
             },
             children: const [
               OnBoardingPage(
                 image: ImageStrings.onBoarding1,
-                title: AppString.onBoardingTitle1,
-                subTitle: AppString.onBoardingSubTitle1,
+                title: AppStrings.onBoardingTitle1,
+                subTitle: AppStrings.onBoardingSubTitle1,
               ),
               OnBoardingPage(
                 image: ImageStrings.onBoarding2,
-                title: AppString.onBoardingTitle2,
-                subTitle: AppString.onBoardingSubTitle2,
+                title: AppStrings.onBoardingTitle2,
+                subTitle: AppStrings.onBoardingSubTitle2,
               ),
               OnBoardingPage(
                 image: ImageStrings.onBoarding3,
-                title: AppString.onBoardingTitle3,
-                subTitle: AppString.onBoardingSubTitle3,
+                title: AppStrings.onBoardingTitle3,
+                subTitle: AppStrings.onBoardingSubTitle3,
               ),
             ],
           ),
