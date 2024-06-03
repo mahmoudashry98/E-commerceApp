@@ -1,4 +1,4 @@
-class SizeApp {
+class AppSize {
   // Padding and Margin Sizes
   static const double xs = 4.0;
   static const double sm = 8.0;
@@ -26,6 +26,11 @@ class SizeApp {
 
   // AppBar height
   static const double appBarHeight = 56.0;
+
+  //Default spacing between sections
+  static const double defaultSpacing = 24.0;
+  static const double spaceBtwItems = 16.0;
+  static const double spaceBtwSections = 32.0;
 
   // Bottom Navigation Bar height
   static const double bottomNavigationBarHeight = 72.0;
