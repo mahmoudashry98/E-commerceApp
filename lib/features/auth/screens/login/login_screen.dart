@@ -2,7 +2,7 @@ import 'package:ecommerce_app/features/auth/screens/login/widget/login_footer.da
 import 'package:ecommerce_app/features/auth/screens/login/widget/login_header.dart';
 import 'package:flutter/material.dart';
 import '../../../../common/style/spacing_styles.dart';
-import 'widget/login_form.dart';
+import 'widget/login_body.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -17,7 +17,7 @@ class LoginScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               LoginHeader(),
-              LoginForm(),
+              LoginBody(),
               LoginFooter(),
             ],
           ),

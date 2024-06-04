@@ -25,13 +25,13 @@ String? validateEnglishOnly(
   String fieldName,
 ) {
   // Text may contains (,.-)
-  final String pattern = r"(^[a-zA-Z0-9,.\-\s:/?#\[\]@!$&\'()*+,;=%]*$)";
+  const String pattern = r"(^[a-zA-Z0-9,.\-\s:/?#\[\]@!$&\'()*+,;=%]*$)";
   final RegExp regExp = RegExp(pattern);
 
   if (value!.isEmpty || value.isEmpty) {
     return null;
   } else if (!regExp.hasMatch(value)) {
-    return fieldName + '${'textOnlyValidation'.tr}';
+    return '$fieldName${'textOnlyValidation'.tr}';
   }
   return null;
 }

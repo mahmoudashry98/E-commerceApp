@@ -32,6 +32,9 @@ class AppStrings {
   static const String verificationCode = "Verification Code";
   static const String resendEmail = "Resend Email";
   static const String orSignInWith = "Or sign in with";
+  static const String orSignUpWith = "Or sign up with";
+  static const String iAgreeTo = "i agree to";
+  static const String and = "and";
 
 // Authentication Headings Text
   static const String loginTitle = "Welcome back";
