@@ -1,8 +1,6 @@
-import 'package:ecommerce_app/utils/helpers/helper_funcation.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../utils/constants/app_strings.dart';
-import '../../../../../utils/constants/image_strings.dart';
 import '../../../../../utils/constants/sizes.dart';
 
 class LoginHeader extends StatelessWidget {
@@ -10,15 +8,15 @@ class LoginHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = AppHelperFunctions.isDarkMode(context);
+    final dark = Theme.of(context).brightness == Brightness.dark;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Image(
           height: 180,
-          image: AssetImage(
-            dark ? ImageStrings.logoDark : ImageStrings.logoLight,
-          ),
+          image: dark
+              ? const AssetImage('assets/logos/logo-white.png')
+              : const AssetImage('assets/logos/logo-black.png'),
         ),
         Text(
           AppStrings.loginTitle,

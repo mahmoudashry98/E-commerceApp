@@ -133,7 +133,7 @@ class SignUpBody extends StatelessWidget {
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: () {},
-                child: const Text(AppStrings.signIn),
+                child: const Text(AppStrings.createAccount),
               ),
             ),
             const SizedBox(
