@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/utils/constants/image_strings.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../utils/constants/app_strings.dart';
@@ -15,8 +16,8 @@ class LoginHeader extends StatelessWidget {
         Image(
           height: 180,
           image: dark
-              ? const AssetImage('assets/logos/logo-white.png')
-              : const AssetImage('assets/logos/logo-black.png'),
+              ? const AssetImage(ImageStrings.logoLight)
+              : const AssetImage(ImageStrings.logoDark),
         ),
         Text(
           AppStrings.loginTitle,

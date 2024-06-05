@@ -1,6 +1,8 @@
 import 'package:ecommerce_app/common/widgets/text_form_field.dart';
+import 'package:ecommerce_app/features/auth/screens/verify_email/verify_email.dart';
 import 'package:ecommerce_app/utils/helpers/helper_funcation.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../../utils/constants/app_colors.dart';
@@ -132,7 +134,9 @@ class SignUpBody extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(const VerifyEmailScreen());
+                },
                 child: const Text(AppStrings.createAccount),
               ),
             ),

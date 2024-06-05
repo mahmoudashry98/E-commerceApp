@@ -12,4 +12,9 @@ class ImageStrings{
   static const String onBoarding1 = 'assets/images/sammy-line-sailor-on-mast-looking-through-telescope.gif';
   static const String onBoarding2 = 'assets/images/sammy-line-woman-in-shopping-cart-placing-order-on-smartphone.gif';
   static const String onBoarding3 = 'assets/images/sammy-line-man-and-dog-delivering-packages-on-a-moped.gif';
+
+
+  //Verify Email
+  static const String sendEmail = 'assets/images/sammy-line-man-receives-a-mail.png';
+  static const String createdEmail = 'assets/images/sammy-line-man-and-woman-high-fiving-each-other.png';
 }

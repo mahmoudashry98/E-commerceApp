@@ -35,6 +35,7 @@ class AppStrings {
   static const String orSignUpWith = "Or sign up with";
   static const String iAgreeTo = "i agree to";
   static const String and = "and";
+  static const String continueText = "Continue";
 
 // Authentication Headings Text
   static const String loginTitle = "Welcome back";
