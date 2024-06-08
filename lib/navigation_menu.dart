@@ -1,0 +1,71 @@
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:iconsax/iconsax.dart';
+
+import 'utils/constants/app_colors.dart';
+import 'utils/helpers/helper_funcation.dart';
+
+class NavMenuScreen extends StatelessWidget {
+  const NavMenuScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final controller = Get.put(NavMenuController());
+    final isDarkMode = AppHelperFunctions.isDarkMode(context);
+    return Scaffold(
+      bottomNavigationBar: Obx(
+        () => NavigationBar(
+            backgroundColor: isDarkMode ? AppColors.black : AppColors.white,
+            indicatorColor: isDarkMode
+                ? AppColors.white.withOpacity(0.1)
+                : AppColors.black.withOpacity(0.1),
+            height: 80,
+            elevation: 0,
+            selectedIndex: controller.selectedIndex.value,
+            onDestinationSelected: (index) =>
+                controller.selectedIndex.value = index,
+            destinations: const [
+              NavigationDestination(
+                icon: Icon(Iconsax.home),
+                label: 'Home',
+              ),
+              NavigationDestination(
+                icon: Icon(Iconsax.shop),
+                label: 'Store',
+              ),
+              NavigationDestination(
+                icon: Icon(Iconsax.heart),
+                label: 'Wishlist',
+              ),
+              NavigationDestination(
+                icon: Icon(Iconsax.user),
+                label: 'Profile',
+              ),
+            ]),
+      ),
+      body: Obx(() => controller.screens[controller.selectedIndex.value]),
+    );
+  }
+}
+
+class NavMenuController extends GetxController {
+  final Rx<int> selectedIndex = 0.obs;
+
+  final screens = [
+    Container(
+      color: AppColors.primaryColor,
+    ),
+    Container(
+      color: AppColors.softGrey,
+    ),
+    Container(
+      color: AppColors.buttonSecondaryColor,
+    ),
+    Container(
+      color: AppColors.errorColor,
+    ),
+    Container(
+      color: AppColors.secondaryColor,
+    ),
+  ];
+}

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
+import '../../../../../navigation_menu.dart';
 import '../../../../../utils/constants/app_colors.dart';
 import '../../../../../utils/constants/app_strings.dart';
 import '../../../../../utils/constants/sizes.dart';
@@ -36,19 +37,15 @@ class LoginBody extends StatelessWidget {
             const SizedBox(
               height: AppSize.spaceBetweenFields / 2,
             ),
-            // Remember Me & Forget Password
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                // Remember Me
                 Row(
                   children: [
                     Checkbox(value: true, onChanged: (value) {}),
                     const Text(AppStrings.rememberMe),
                   ],
                 ),
-
-                // Forget Password
                 TextButton(
                   onPressed: () {
                     Get.to(const ForgotPasswordScreen());
@@ -61,12 +58,12 @@ class LoginBody extends StatelessWidget {
               ],
             ),
             const SizedBox(height: AppSize.spaceBtwSections),
-
-            // Sign In Button
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(const NavMenuScreen());
+                },
                 child: const Text(AppStrings.signIn),
               ),
             ),

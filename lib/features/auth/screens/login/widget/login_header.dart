@@ -3,21 +3,22 @@ import 'package:flutter/material.dart';
 
 import '../../../../../utils/constants/app_strings.dart';
 import '../../../../../utils/constants/sizes.dart';
+import '../../../../../utils/helpers/helper_funcation.dart';
 
 class LoginHeader extends StatelessWidget {
   const LoginHeader({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final dark = Theme.of(context).brightness == Brightness.dark;
+    final isDarkMode = AppHelperFunctions.isDarkMode(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Image(
           height: 180,
-          image: dark
-              ? const AssetImage(ImageStrings.logoLight)
-              : const AssetImage(ImageStrings.logoDark),
+          image: isDarkMode
+              ? const AssetImage(ImageStrings.logoDark)
+              : const AssetImage(ImageStrings.logoLight),
         ),
         Text(
           AppStrings.loginTitle,
