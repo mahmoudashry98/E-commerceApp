@@ -1,20 +1,21 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
-import 'package:ecommerce_app/features/auth/screens/verify_email/success_create_account.dart';
+import '../app_button.dart';
 
-import '../../../../../common/widgets/app_button.dart';
-import '../../../../../utils/constants/app_strings.dart';
-import '../../../../../utils/constants/sizes.dart';
+import '../../../utils/constants/sizes.dart';
 
 class VerifyEmailFooter extends StatelessWidget {
-  final String textButton;
+  final String? textButton;
+  final String appButtonText;
   final bool isResend;
+  final void Function() onPressed;
   const VerifyEmailFooter({
     super.key,
-    required this.textButton,
+    this.textButton,
+    required this.appButtonText,
     this.isResend = false,
+    required this.onPressed,
   });
 
   @override
@@ -22,8 +23,8 @@ class VerifyEmailFooter extends StatelessWidget {
     return Column(
       children: [
         AppButton(
-          text: AppStrings.continueText,
-          onPressed: () => Get.to(const SuccessCreatedAccount()),
+          text: appButtonText,
+          onPressed: onPressed,
         ),
         const SizedBox(
           height: AppSize.spaceBtwItems,
@@ -34,7 +35,7 @@ class VerifyEmailFooter extends StatelessWidget {
                 child: TextButton(
                   onPressed: () {},
                   child: Text(
-                    textButton,
+                    textButton ?? '',
                   ),
                 ),
               )

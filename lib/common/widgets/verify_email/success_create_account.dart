@@ -1,13 +1,12 @@
-import 'package:ecommerce_app/features/auth/screens/verify_email/widgets/verify_email_footer.dart';
 import 'package:ecommerce_app/utils/constants/app_colors.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
-import '../../../../utils/constants/app_strings.dart';
-import '../../../../utils/constants/image_strings.dart';
-import 'widgets/verify_email_body.dart';
-import 'widgets/verify_email_header.dart';
+import '../../../utils/constants/app_strings.dart';
+import '../../../utils/constants/image_strings.dart';
+import 'verify_email_body.dart';
+import 'verify_email_header.dart';
 
 class SuccessCreatedAccount extends StatelessWidget {
   const SuccessCreatedAccount({super.key});
@@ -39,9 +38,10 @@ class SuccessCreatedAccount extends StatelessWidget {
                 title: AppStrings.yourAccountCreatedTitle,
                 subTitle: AppStrings.yourAccountCreatedSubTitle,
               ),
-              VerifyEmailFooter(
-                textButton: AppStrings.resendEmail,
-              ),
+              // VerifyEmailFooter(
+              //   textButton: AppStrings.resendEmail,
+              //   onPressed: ,
+              // ),
             ],
           ),
         ),

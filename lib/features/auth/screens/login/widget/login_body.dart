@@ -7,6 +7,7 @@ import 'package:iconsax/iconsax.dart';
 import '../../../../../utils/constants/app_colors.dart';
 import '../../../../../utils/constants/app_strings.dart';
 import '../../../../../utils/constants/sizes.dart';
+import '../../forgot_password/forgo_password_screen.dart';
 
 class LoginBody extends StatelessWidget {
   const LoginBody({super.key});
@@ -49,7 +50,9 @@ class LoginBody extends StatelessWidget {
 
                 // Forget Password
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.to(const ForgotPasswordScreen());
+                  },
                   child: Text(
                     AppStrings.forgetPassword,
                     style: Theme.of(context).textTheme.bodyLarge,

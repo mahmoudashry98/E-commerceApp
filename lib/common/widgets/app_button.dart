@@ -1,12 +1,14 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:ecommerce_app/utils/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class AppButton extends StatelessWidget {
   final String text;
   final Color? textColor;
-  final MaterialStateProperty<Color>? buttonColor;
+  final Color? buttonColor;
   void Function() onPressed;
-   AppButton({
+  AppButton({
     super.key,
     required this.text,
     this.textColor,
@@ -19,7 +21,8 @@ class AppButton extends StatelessWidget {
     return SizedBox(
       width: double.infinity,
       child: ElevatedButton(
-        style: ButtonStyle(backgroundColor: buttonColor),
+        style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all(AppColors.primaryColor)),
         onPressed: onPressed,
         child: Text(
           text,

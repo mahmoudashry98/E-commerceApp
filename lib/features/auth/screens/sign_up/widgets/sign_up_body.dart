@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/common/widgets/text_form_field.dart';
-import 'package:ecommerce_app/features/auth/screens/verify_email/verify_email.dart';
+import 'package:ecommerce_app/common/widgets/verify_email/verify_email.dart';
 import 'package:ecommerce_app/utils/helpers/helper_funcation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

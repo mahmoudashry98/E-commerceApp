@@ -1,13 +1,15 @@
-import 'package:ecommerce_app/features/auth/screens/verify_email/widgets/verify_email_footer.dart';
+import 'package:ecommerce_app/common/widgets/verify_email/success_create_account.dart';
+import 'package:ecommerce_app/common/widgets/verify_email/verify_email_footer.dart';
 import 'package:ecommerce_app/utils/constants/app_colors.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
-import '../../../../utils/constants/app_strings.dart';
-import '../../../../utils/constants/image_strings.dart';
-import 'widgets/verify_email_body.dart';
-import 'widgets/verify_email_header.dart';
+import '../../../utils/constants/app_strings.dart';
+import '../../../utils/constants/image_strings.dart';
+import 'verify_email_body.dart';
+import 'verify_email_header.dart';
 
 class VerifyEmailScreen extends StatelessWidget {
   const VerifyEmailScreen({super.key});
@@ -27,23 +29,27 @@ class VerifyEmailScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: const SingleChildScrollView(
+      body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(AppSize.defaultSpacing),
+          padding: const EdgeInsets.all(AppSize.defaultSpacing),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              VerifyEmailHeader(
+              const VerifyEmailHeader(
                 image: ImageStrings.sendEmail,
               ),
-              VerifyEmailBody(
+              const VerifyEmailBody(
                 title: AppStrings.verifyEmail,
                 subTitle: AppStrings.confirmEmail,
                 isEmail: true,
               ),
               VerifyEmailFooter(
                 textButton: AppStrings.resendEmail,
+                appButtonText: AppStrings.continueText,
                 isResend: true,
+                onPressed: () {
+                  Get.to(const SuccessCreatedAccount());
+                },
               ),
             ],
           ),

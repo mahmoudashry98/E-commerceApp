@@ -1,14 +1,14 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 
-import '../../../../../utils/constants/sizes.dart';
+import '../../../utils/constants/sizes.dart';
 
 class VerifyEmailBody extends StatelessWidget {
   final String title;
   final String subTitle;
   final bool? isEmail;
   const VerifyEmailBody({
-    super.key,
+  super.key,
     required this.title,
     required this.subTitle,
     this.isEmail = false,
@@ -28,7 +28,7 @@ class VerifyEmailBody extends StatelessWidget {
         ),
         isEmail!
             ? Text(
-                'Mahmoud Ashry@gmail.com',
+                'MahmoudAshry@gmail.com',
                 style: Theme.of(context).textTheme.labelLarge,
                 textAlign: TextAlign.center,
               )

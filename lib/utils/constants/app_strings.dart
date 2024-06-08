@@ -36,6 +36,8 @@ class AppStrings {
   static const String iAgreeTo = "i agree to";
   static const String and = "and";
   static const String continueText = "Continue";
+  static const String submit = "Submit";
+  static const String done = "Done";
 
 // Authentication Headings Text
   static const String loginTitle = "Welcome back";
@@ -43,7 +45,7 @@ class AppStrings {
       "Discover Limitless Choices and Unmatched Convenience.";
   static const String signupTitle = "Let's create your account";
   static const String signupSubTitle = "It's quick and easy.";
-  static const String forgetPasswordTitle = "Forgot Password?";
+  static const String forgetPasswordTitle = "Forgot Password";
   static const String forgetPasswordSubTitle =
       "Don't worry; sometimes people can forget too. Enter your email and we will send you a password reset link.";
   static const String changeYourPasswordTitle = "Change Your Password";
@@ -58,4 +60,6 @@ class AppStrings {
       "Your account successfully created!";
   static const String yourAccountCreatedSubTitle =
       "Welcome to Your Ultimate Shopping Destination: Your Account Is Created, Unleash the Joy of Seamless Online Shopping!";
+  static const String passwordResetEmailTitle= "Password Reset Email Sent";
+  static const String passwordResetEmailSubTitle = "Your Account Security is Our Priority We've Sent you a Secure Link to Safely Change Your and Keep Your Account Protected ";
 }
