@@ -36,6 +36,9 @@ class AppDeviceUtils {
   static double getScreenHeight(BuildContext context) {
     return MediaQuery.of(context).size.height;
   }
+  static double getScreenWidth(BuildContext context) {
+    return MediaQuery.of(context).size.width;
+  }
 
   static double getPixelRatio() {
     return MediaQuery.of(Get.context!).devicePixelRatio;

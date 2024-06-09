@@ -1,4 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:ecommerce_app/features/onboarding/controller/onboarding_controller.dart';
 import 'package:ecommerce_app/features/onboarding/screens/widget/dot_nav_smooth_indicator.dart';
 import 'package:flutter/material.dart';
@@ -29,22 +28,20 @@ class OnBoardingScreen extends StatelessWidget {
               OnBoardingPage(
                 image: ImageStrings.onBoarding1,
                 title: AppStrings.onBoardingTitle1,
-                subTitle: AppStrings.onBoardingSubTitle1,
+                subTitle: AppStrings.onBoardingSubtitle1,
               ),
               OnBoardingPage(
                 image: ImageStrings.onBoarding2,
                 title: AppStrings.onBoardingTitle2,
-                subTitle: AppStrings.onBoardingSubTitle2,
+                subTitle: AppStrings.onBoardingSubtitle2,
               ),
               OnBoardingPage(
                 image: ImageStrings.onBoarding3,
                 title: AppStrings.onBoardingTitle3,
-                subTitle: AppStrings.onBoardingSubTitle3,
+                subTitle: AppStrings.onBoardingSubtitle3,
               ),
             ],
           ),
-
-          ///Get Started Button
           const OnBoardingShip(),
           const DotNavSmoothIndicator(),
           const NextButton(),

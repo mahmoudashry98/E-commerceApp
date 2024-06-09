@@ -42,6 +42,7 @@ class AppColors {
   //App Border Colors
   static const Color borderPrimaryColor = Color(0xFFD9D9D9);
   static const Color borderSecondaryColor = Color(0xFFE6E6E6);
+  
 
   //Error And Validation Colors
   static const Color errorColor = Color(0xFFD32F2F);

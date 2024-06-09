@@ -18,10 +18,6 @@ class SignUpHeader extends StatelessWidget {
         const SizedBox(
           height: AppSize.spaceBtwItems,
         ),
-        Text(
-          AppStrings.signupSubTitle,
-          style: Theme.of(context).textTheme.headlineLarge,
-        ),
       ],
     );
   }

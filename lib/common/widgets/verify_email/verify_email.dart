@@ -39,13 +39,13 @@ class VerifyEmailScreen extends StatelessWidget {
                 image: ImageStrings.sendEmail,
               ),
               const VerifyEmailBody(
-                title: AppStrings.verifyEmail,
-                subTitle: AppStrings.confirmEmail,
+                title: AppStrings.confirmEmail,
+                subTitle: AppStrings.confirmEmailSubTitle,
                 isEmail: true,
               ),
               VerifyEmailFooter(
                 textButton: AppStrings.resendEmail,
-                appButtonText: AppStrings.continueText,
+                appButtonText: AppStrings.tContinue,
                 isResend: true,
                 onPressed: () {
                   Get.to(const SuccessCreatedAccount());

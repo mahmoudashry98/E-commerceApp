@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/features/shop/screens/home/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -52,9 +53,7 @@ class NavMenuController extends GetxController {
   final Rx<int> selectedIndex = 0.obs;
 
   final screens = [
-    Container(
-      color: AppColors.primaryColor,
-    ),
+    const HomeScreen(),
     Container(
       color: AppColors.softGrey,
     ),

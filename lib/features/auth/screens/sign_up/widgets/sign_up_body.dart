@@ -47,7 +47,7 @@ class SignUpBody extends StatelessWidget {
             ),
             TextFormFieldWidget(
               prefixIcon: const Icon(Iconsax.user_edit),
-              labelText: AppStrings.userName,
+              labelText: AppStrings.username,
               labelStyle: Theme.of(context).textTheme.bodyLarge!,
             ),
             const SizedBox(

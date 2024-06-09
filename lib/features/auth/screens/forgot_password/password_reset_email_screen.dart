@@ -38,12 +38,12 @@ class PasswordResetEmailScreen extends StatelessWidget {
                 image: ImageStrings.sendEmail,
               ),
               const VerifyEmailBody(
-                title: AppStrings.passwordResetEmailTitle,
-                subTitle: AppStrings.passwordResetEmailSubTitle,
+                title: AppStrings.changeYourPassword,
+                isEmail: true,
+                subTitle: AppStrings.forgetPasswordSubTitle,
               ),
               VerifyEmailFooter(
-                
-                appButtonText:AppStrings.done,
+                appButtonText: AppStrings.done,
                 isResend: true,
                 onPressed: () => Get.to(const LoginScreen()),
               ),

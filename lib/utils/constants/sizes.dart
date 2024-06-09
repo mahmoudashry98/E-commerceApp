@@ -55,6 +55,9 @@ class AppSize {
   // Bottom Sheet height
   static const double bottomSheetHeight = 300.0;
 
+  //Grid View Spacing
+  static const double gridViewSpacing = 16.0;
+
   // Card Size
   static const double cardRadiusLg = 16.0;
   static const double cardRadiusMd = 12.0;
