@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
+import '../../../../../common/widgets/app_button.dart';
 import '../../../../../navigation_menu.dart';
 import '../../../../../utils/constants/app_colors.dart';
 import '../../../../../utils/constants/app_strings.dart';
@@ -58,14 +59,11 @@ class LoginBody extends StatelessWidget {
               ],
             ),
             const SizedBox(height: AppSize.spaceBtwSections),
-            SizedBox(
-              width: double.infinity,
-              child: ElevatedButton(
-                onPressed: () {
-                  Get.to(const NavMenuScreen());
-                },
-                child: const Text(AppStrings.signIn),
-              ),
+            AppButton(
+              onPressed: () {
+                Get.to(const NavMenuScreen());
+              },
+              text: AppStrings.signIn,
             ),
             const SizedBox(
               height: AppSize.spaceBtwItems,

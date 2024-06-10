@@ -23,25 +23,27 @@ class HomeScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const AppPrimaryHeaderContainer(
+            AppPrimaryHeaderContainer(
               child: Column(
                 children: [
-                  THomeAppBar(),
-                  AppSearchContainer(
+                  const THomeAppBar(),
+                  const AppSearchContainer(
                     text: 'Search in Store',
                   ),
-                  SizedBox(height: AppSize.spaceBtwSections),
+                  const SizedBox(height: AppSize.spaceBtwSections),
                   Padding(
-                    padding: EdgeInsets.only(left: AppSize.defaultSpacing),
+                    padding:
+                        const EdgeInsets.only(left: AppSize.defaultSpacing),
                     child: Column(
                       children: [
                         SectionHeading(
                           title: 'Popular Categories',
                           showActionButton: false,
                           textColor: AppColors.white,
+                          onPressed: () {},
                         ),
-                        SizedBox(height: AppSize.spaceBtwItems),
-                        HomeCategories(),
+                        const SizedBox(height: AppSize.spaceBtwItems),
+                        const HomeCategories(),
                       ],
                     ),
                   ),
@@ -62,7 +64,7 @@ class HomeScreen extends StatelessWidget {
                   const SizedBox(
                     height: AppSize.spaceBtwSections,
                   ),
-                  AppGridView(
+                  AppGridLayout(
                     itemCount: 4,
                     itemBuilder: (_, index) => const AppProductCardVertical(),
                     mainAxisExtent: 288,

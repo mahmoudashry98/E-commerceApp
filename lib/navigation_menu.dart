@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
+import 'features/shop/screens/store/store_screen.dart';
 import 'utils/constants/app_colors.dart';
 import 'utils/helpers/helper_funcation.dart';
 
@@ -54,9 +55,7 @@ class NavMenuController extends GetxController {
 
   final screens = [
     const HomeScreen(),
-    Container(
-      color: AppColors.softGrey,
-    ),
+    const StoreScreen(),
     Container(
       color: AppColors.buttonSecondaryColor,
     ),

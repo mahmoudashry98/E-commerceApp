@@ -1,4 +1,6 @@
-import 'package:ecommerce_app/common/widgets/images/rounded_image.dart';
+import 'package:ecommerce_app/common/widgets/images/app_rounded_image.dart';
+import 'package:ecommerce_app/common/widgets/texts/app_brand_tittle_text_with_verified_icon.dart';
+import 'package:ecommerce_app/utils/constants/enum.dart';
 import 'package:ecommerce_app/utils/helpers/helper_funcation.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
@@ -21,11 +23,10 @@ class AppProductCardVertical extends StatelessWidget {
     return GestureDetector(
       onTap: () {},
       child: Container(
-        width: 180,
         padding: const EdgeInsets.all(1),
         decoration: BoxDecoration(
           boxShadow: [ShadowStyle.verticalProductShadow],
-          borderRadius: BorderRadius.circular(AppSize.productImageRadius),
+          borderRadius: BorderRadius.circular(AppSize.lg),
           color: isDarkMode ? AppColors.darkerGrey : AppColors.white,
         ), // BoxDecoration
         child: Column(
@@ -38,8 +39,9 @@ class AppProductCardVertical extends StatelessWidget {
               child: Stack(
                 children: [
                   const AppRoundedImage(
-                      imageUrl: ImageStrings.productImage1,
-                      applyImageRadius: true),
+                    imageUrl: ImageStrings.productImage1,
+                    applyImageRadius: true,
+                  ),
                   Positioned(
                     top: 12,
                     child: TRoundedContainer(
@@ -60,7 +62,10 @@ class AppProductCardVertical extends StatelessWidget {
                     top: 0,
                     right: 0,
                     child: AppCircularIcon(
+                      height: 40,
+                      width: 40,
                       icon: Iconsax.heart5,
+                      size: 25,
                       color: AppColors.errorColor,
                     ),
                   ),
@@ -76,17 +81,9 @@ class AppProductCardVertical extends StatelessWidget {
                   const AppProductTitleText(
                       title: 'Green Nike Air Shoes', smallSize: true),
                   const SizedBox(height: AppSize.spaceBtwItems / 2),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Text('Nike',
-                          overflow: TextOverflow.ellipsis,
-                          maxLines: 1,
-                          style: Theme.of(context).textTheme.labelMedium),
-                      const SizedBox(width: AppSize.xs),
-                      const Icon(Iconsax.verify5,
-                          color: AppColors.primaryColor, size: AppSize.iconXs),
-                    ],
+                  const AppBrandTitleWithVerifiedIcon(
+                    title: 'Nike',
+                    brandTextSize: TextSize.large,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,

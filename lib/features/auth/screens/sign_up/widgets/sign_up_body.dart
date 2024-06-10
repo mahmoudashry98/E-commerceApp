@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
+import '../../../../../common/widgets/app_button.dart';
 import '../../../../../utils/constants/app_colors.dart';
 import '../../../../../utils/constants/app_strings.dart';
 import '../../../../../utils/constants/sizes.dart';
@@ -78,8 +79,6 @@ class SignUpBody extends StatelessWidget {
             const SizedBox(
               height: AppSize.spaceBetweenFields,
             ),
-
-            /// Terms & Conditions Checkbox
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
@@ -129,16 +128,11 @@ class SignUpBody extends StatelessWidget {
               ],
             ),
             const SizedBox(height: AppSize.spaceBtwSections),
-
-            // Sign In Button
-            SizedBox(
-              width: double.infinity,
-              child: ElevatedButton(
-                onPressed: () {
-                  Get.to(const VerifyEmailScreen());
-                },
-                child: const Text(AppStrings.createAccount),
-              ),
+            AppButton(
+              onPressed: () {
+                Get.to(const VerifyEmailScreen());
+              },
+              text: AppStrings.createAccount,
             ),
             const SizedBox(
               height: AppSize.spaceBtwItems,

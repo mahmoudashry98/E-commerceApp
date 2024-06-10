@@ -25,6 +25,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
     return Padding(
         padding: const EdgeInsets.symmetric(horizontal: AppSize.md),
         child: AppBar(
+          
           automaticallyImplyLeading: false,
           leading: showBackArrow
               ? IconButton(
