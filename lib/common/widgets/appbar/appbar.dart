@@ -25,12 +25,12 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
     return Padding(
         padding: const EdgeInsets.symmetric(horizontal: AppSize.md),
         child: AppBar(
-          
+          centerTitle: false,
           automaticallyImplyLeading: false,
           leading: showBackArrow
               ? IconButton(
                   onPressed: () => Get.back(),
-                  icon: const Icon(Icons.arrow_left),
+                  icon: const Icon(Icons.arrow_back),
                 )
               : leadingIcon != null
                   ? IconButton(

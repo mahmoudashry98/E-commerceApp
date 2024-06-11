@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
+import 'features/auth/screens/settings/settings.dart';
 import 'features/shop/screens/store/store_screen.dart';
 import 'features/shop/screens/wish_list/wish_list_screen.dart';
 import 'utils/constants/app_colors.dart';
@@ -58,11 +59,6 @@ class NavMenuController extends GetxController {
     const HomeScreen(),
     const StoreScreen(),
     const WishListScreen(),
-    Container(
-      color: AppColors.errorColor,
-    ),
-    Container(
-      color: AppColors.secondaryColor,
-    ),
+    const SettingsScreen()
   ];
 }
