@@ -1,6 +1,8 @@
+import 'package:ecommerce_app/utils/helpers/helper_funcation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../../utils/constants/app_colors.dart';
 import '../../../utils/constants/sizes.dart';
 import '../../../utils/device/device_utility.dart';
 
@@ -22,6 +24,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = AppHelperFunctions.isDarkMode(context);
     return Padding(
         padding: const EdgeInsets.symmetric(horizontal: AppSize.md),
         child: AppBar(
@@ -30,7 +33,10 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
           leading: showBackArrow
               ? IconButton(
                   onPressed: () => Get.back(),
-                  icon: const Icon(Icons.arrow_back),
+                  icon: Icon(
+                    Icons.arrow_back,
+                    color: isDark ? AppColors.white : AppColors.darkColor,
+                  ),
                 )
               : leadingIcon != null
                   ? IconButton(

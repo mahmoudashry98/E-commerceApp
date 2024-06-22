@@ -23,6 +23,7 @@ dependencies:
   logger: ^2.2.0
   smooth_page_indicator: ^1.1.0
   url_launcher: ^6.2.6
+  readmore: ^3.0.0
 
 #Product Specific
 dev_dependencies:

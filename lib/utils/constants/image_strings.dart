@@ -17,9 +17,9 @@ class ImageStrings {
 
   //Verify Email
   static const String sendEmail =
-      'assets/images/sammy-line-man-receives-a-mail.png';
+      'assets/images/on_boarding_images/sammy-line-man-receives-a-mail.png';
   static const String createdEmail =
-      'assets/images/sammy-line-man-and-woman-high-fiving-each-other.png';
+      'assets/images/on_boarding_images/sammy-line-man-and-woman-high-fiving-each-other.png';
 
   // -- Animations
   static const String productsIllustration =

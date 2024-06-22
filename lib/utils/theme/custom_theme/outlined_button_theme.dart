@@ -1,31 +1,39 @@
+import 'package:ecommerce_app/utils/constants/app_colors.dart';
+import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
-class OutLinedButtonThemeApp{
-  OutLinedButtonThemeApp._();
-  static OutlinedButtonThemeData lightOutlinedButtonTheme = OutlinedButtonThemeData(
+/* -- Light & Dark Outlined Button Themes -- */
+class TOutlinedButtonTheme {
+  TOutlinedButtonTheme._(); //To avoid creating instances
+
+  /* -- Light Theme -- */
+  static final lightOutlinedButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
       elevation: 0,
-      foregroundColor: Colors.black,
-      side: const BorderSide(color: Colors.blue),
+      foregroundColor: AppColors.darkColor,
+      side: const BorderSide(color: AppColors.borderPrimaryColor),
       textStyle: const TextStyle(
-          fontSize: 16, color: Colors.blue, fontWeight: FontWeight.w600),
-      padding: const EdgeInsets.symmetric(vertical: 16,horizontal: 20),
+          fontSize: 16, color: AppColors.black, fontWeight: FontWeight.w600),
+      padding: const EdgeInsets.symmetric(
+          vertical: AppSize.buttonHeight, horizontal: 20),
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(14),
-      ),
+          borderRadius: BorderRadius.circular(AppSize.buttonRadius)),
     ),
   );
-  static OutlinedButtonThemeData darkOutlinedButtonTheme = OutlinedButtonThemeData(
+
+  /* -- Dark Theme -- */
+  static final darkOutlinedButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
-      elevation: 0,
-      foregroundColor: Colors.white,
-      side: const BorderSide(color: Colors.blueAccent),
+      foregroundColor: AppColors.lightColor,
+      side: const BorderSide(color: AppColors.borderPrimaryColor),
       textStyle: const TextStyle(
-          fontSize: 16, color: Colors.white, fontWeight: FontWeight.w600),
-      padding: const EdgeInsets.symmetric(vertical: 16,horizontal: 20),
+          fontSize: 16,
+          color: AppColors.textWhiteColor,
+          fontWeight: FontWeight.w600),
+      padding: const EdgeInsets.symmetric(
+          vertical: AppSize.buttonHeight, horizontal: 20),
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(14),
-      ),
+          borderRadius: BorderRadius.circular(AppSize.buttonRadius)),
     ),
   );
 }

@@ -5,9 +5,7 @@ import 'package:ecommerce_app/common/widgets/products/cart/carts.dart';
 import 'package:ecommerce_app/common/widgets/texts/section_heading.dart';
 import 'package:ecommerce_app/features/shop/screens/store/widgets/category_tap.dart';
 import 'package:ecommerce_app/utils/constants/app_colors.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 import '../../../../common/widgets/appbar/tabbar.dart';
 import '../../../../common/widgets/brands/app_brand_card.dart';

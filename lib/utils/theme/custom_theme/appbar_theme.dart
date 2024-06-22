@@ -1,34 +1,32 @@
+import 'package:ecommerce_app/utils/constants/app_colors.dart';
+import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
-class AppBarThemeApp {
-  AppBarThemeApp._();
-  static AppBarTheme lightAppBarTheme = const AppBarTheme(
-    elevation: 0,
-    scrolledUnderElevation: 0,
-    backgroundColor: Colors.transparent,
-    surfaceTintColor: Colors.transparent,
-    iconTheme: IconThemeData(color: Colors.black, size: 24),
-    actionsIconTheme: IconThemeData(color: Colors.black, size: 24),
-    centerTitle: true,
-    titleTextStyle: TextStyle(
-      color: Colors.black,
-      fontSize: 18,
-      fontWeight: FontWeight.w600,
-    ),
-  );
+class TAppBarTheme {
+  TAppBarTheme._();
 
-  static AppBarTheme darkAppBarTheme = const AppBarTheme(
+  static const lightAppBarTheme = AppBarTheme(
     elevation: 0,
+    centerTitle: false,
     scrolledUnderElevation: 0,
     backgroundColor: Colors.transparent,
     surfaceTintColor: Colors.transparent,
-    iconTheme: IconThemeData(color: Colors.black, size: 24),
-    actionsIconTheme: IconThemeData(color: Colors.black, size: 24),
-    centerTitle: true,
+    iconTheme: IconThemeData(color: AppColors.black, size: AppSize.iconMd),
+    actionsIconTheme:
+        IconThemeData(color: AppColors.black, size: AppSize.iconMd),
     titleTextStyle: TextStyle(
-      color: Colors.white,
-      fontSize: 18,
-      fontWeight: FontWeight.w600,
-    ),
+        fontSize: 18.0, fontWeight: FontWeight.w600, color: AppColors.black),
+  );
+  static const darkAppBarTheme = AppBarTheme(
+    elevation: 0,
+    centerTitle: false,
+    scrolledUnderElevation: 0,
+    backgroundColor: Colors.transparent,
+    surfaceTintColor: Colors.transparent,
+    iconTheme: IconThemeData(color: AppColors.black, size: AppSize.iconMd),
+    actionsIconTheme:
+        IconThemeData(color: AppColors.white, size: AppSize.iconMd),
+    titleTextStyle: TextStyle(
+        fontSize: 18.0, fontWeight: FontWeight.w600, color: AppColors.white),
   );
 }

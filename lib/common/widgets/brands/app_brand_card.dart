@@ -34,7 +34,7 @@ class AppBrandCard extends StatelessWidget {
                 isNetworkImage: false,
                 image: ImageStrings.clothIcon,
                 backgroundColor: Colors.transparent,
-                overLayColor: AppHelperFunctions.isDarkMode(context)
+                overlayColor: AppHelperFunctions.isDarkMode(context)
                     ? AppColors.white
                     : AppColors.black,
               ),

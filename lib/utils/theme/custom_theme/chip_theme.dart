@@ -1,29 +1,22 @@
+import 'package:ecommerce_app/utils/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 
-class ChipThemeApp {
-  ChipThemeApp._();
+class TChipTheme {
+  TChipTheme._();
+
   static ChipThemeData lightChipTheme = ChipThemeData(
-    disabledColor: Colors.grey.withOpacity(0.4),
-    labelStyle: const TextStyle(color: Colors.black),
-    selectedColor: Colors.blue,
+    disabledColor: AppColors.grey.withOpacity(0.4),
+    labelStyle: const TextStyle(color: AppColors.black),
+    selectedColor: AppColors.primaryColor,
     padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 12),
-    checkmarkColor: Colors.white,
-    // backgroundColor: Colors.grey,
-    // secondaryLabelStyle: TextStyle(color: Colors.white),
-    // brightness: Brightness.light,
-    // shape: StadiumBorder(),
-    // showCheckmark: true,
+    checkmarkColor: AppColors.white,
   );
+
   static ChipThemeData darkChipTheme = const ChipThemeData(
-    disabledColor: Colors.grey,
-    labelStyle: TextStyle(color: Colors.white),
-    selectedColor: Colors.blue,
+    disabledColor: AppColors.darkerGrey,
+    labelStyle: TextStyle(color: AppColors.white),
+    selectedColor: AppColors.primaryColor,
     padding: EdgeInsets.symmetric(horizontal: 12.0, vertical: 12),
-    checkmarkColor: Colors.white,
-    // backgroundColor: Colors.grey,
-    // secondaryLabelStyle: TextStyle(color: Colors.white),
-    // brightness: Brightness.light,
-    // shape: StadiumBorder(),
-    // showCheckmark: true,
+    checkmarkColor: AppColors.white,
   );
 }

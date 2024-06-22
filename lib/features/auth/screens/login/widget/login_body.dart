@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/common/widgets/text_form_field.dart';
-import 'package:ecommerce_app/features/auth/screens/sign_up/sign_up.dart';
+import 'package:ecommerce_app/features/auth/screens/sign_up/sign_up_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';

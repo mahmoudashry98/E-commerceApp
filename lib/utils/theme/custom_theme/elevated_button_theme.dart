@@ -1,40 +1,46 @@
+import 'package:ecommerce_app/utils/constants/app_colors.dart';
+import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
-class ElevatedButtonThemeApp {
-  ElevatedButtonThemeApp._();
-  static ElevatedButtonThemeData lightElevatedButtonTheme =
-      ElevatedButtonThemeData(
+/* -- Light & Dark Elevated Button Themes -- */
+class TElevatedButtonTheme {
+  TElevatedButtonTheme._(); //To avoid creating instances
+
+  /* -- Light Theme -- */
+  static final lightElevatedButtonTheme = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       elevation: 0,
-      foregroundColor: Colors.white,
-      backgroundColor: Colors.blue,
-      disabledForegroundColor: Colors.grey,
-      disabledBackgroundColor: Colors.grey,
-      side: const BorderSide(color: Colors.blue),
-      padding: const EdgeInsets.symmetric(vertical: 18),
+      foregroundColor: AppColors.lightColor,
+      backgroundColor: AppColors.primaryColor,
+      disabledForegroundColor: AppColors.darkGrey,
+      disabledBackgroundColor: AppColors.buttonDisabledColor,
+      side: const BorderSide(color: AppColors.primaryColor),
+      padding: const EdgeInsets.symmetric(vertical: AppSize.buttonHeight),
       textStyle: const TextStyle(
-          fontSize: 16, color: Colors.white, fontWeight: FontWeight.w600),
+          fontSize: 16,
+          color: AppColors.textWhiteColor,
+          fontWeight: FontWeight.w600),
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12),
-      ),
+          borderRadius: BorderRadius.circular(AppSize.buttonRadius)),
     ),
   );
 
-  static ElevatedButtonThemeData darkElevatedButtonTheme =
-      ElevatedButtonThemeData(
+  /* -- Dark Theme -- */
+  static final darkElevatedButtonTheme = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       elevation: 0,
-      foregroundColor: Colors.white,
-      backgroundColor: Colors.blue,
-      disabledForegroundColor: Colors.grey,
-      disabledBackgroundColor: Colors.grey,
-      side: const BorderSide(color: Colors.blue),
-      padding: const EdgeInsets.symmetric(vertical: 18),
+      foregroundColor: AppColors.lightColor,
+      backgroundColor: AppColors.primaryColor,
+      disabledForegroundColor: AppColors.darkGrey,
+      disabledBackgroundColor: AppColors.darkerGrey,
+      side: const BorderSide(color: AppColors.primaryColor),
+      padding: const EdgeInsets.symmetric(vertical: AppSize.buttonHeight),
       textStyle: const TextStyle(
-          fontSize: 16, color: Colors.white, fontWeight: FontWeight.w600),
+          fontSize: 16,
+          color: AppColors.textWhiteColor,
+          fontWeight: FontWeight.w600),
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12),
-      ),
+          borderRadius: BorderRadius.circular(AppSize.buttonRadius)),
     ),
   );
 }
