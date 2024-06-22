@@ -39,8 +39,7 @@ class AppProductCardVertical extends StatelessWidget {
             TRoundedContainer(
               height: 180,
               padding: const EdgeInsets.all(AppSize.sm),
-              backgroundColor:
-                  isDarkMode ? AppColors.darkColor : AppColors.lightColor,
+              backgroundColor: isDarkMode ? AppColors.dark : AppColors.light,
               child: Stack(
                 children: [
                   const AppRoundedImage(
@@ -108,7 +107,7 @@ class AppProductCardVertical extends StatelessWidget {
                 ),
                 Container(
                   decoration: const BoxDecoration(
-                    color: AppColors.darkColor,
+                    color: AppColors.dark,
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(AppSize.cardRadiusMd),
                       bottomRight: Radius.circular(AppSize.productImageRadius),

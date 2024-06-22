@@ -42,8 +42,7 @@ class VerticalImageText extends StatelessWidget {
                   image: const AssetImage(
                       "assets/icons/categories/icons8-shoes-64.png"),
                   fit: BoxFit.cover,
-                  color:
-                      isDarkMode ? AppColors.lightColor : AppColors.darkColor,
+                  color: isDarkMode ? AppColors.light : AppColors.dark,
                 ),
               ),
             ),

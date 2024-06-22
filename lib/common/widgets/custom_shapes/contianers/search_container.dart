@@ -37,7 +37,7 @@ class AppSearchContainer extends StatelessWidget {
           decoration: BoxDecoration(
             color: showBackground
                 ? isDarkMode
-                    ? AppColors.darkColor
+                    ? AppColors.dark
                     : AppColors.white
                 : Colors.transparent,
             borderRadius: BorderRadius.circular(AppSize.cardRadiusLg),

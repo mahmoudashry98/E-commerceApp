@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/common/widgets/appbar/appbar.dart';
-import 'package:ecommerce_app/features/auth/screens/profile/widgets/profile_menu.dart';
+import 'package:ecommerce_app/features/personalization/screens/profile/widgets/profile_menu.dart';
 import 'package:ecommerce_app/utils/constants/app_colors.dart';
 import 'package:ecommerce_app/utils/constants/image_strings.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';

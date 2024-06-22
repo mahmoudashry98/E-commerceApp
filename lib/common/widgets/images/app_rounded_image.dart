@@ -13,7 +13,7 @@ class AppRoundedImage extends StatelessWidget {
     this.height,
     this.applyImageRadius = true,
     required this.imageUrl,
-    this.backgroundColor = AppColors.lightColor,
+    this.backgroundColor = AppColors.light,
     this.fit = BoxFit.contain,
     this.isNetworkImage = false,
     this.borderRadius = AppSize.md,

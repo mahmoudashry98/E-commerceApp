@@ -21,7 +21,7 @@ class AppProductImageSlider extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppCurvedEdgesWidget(
       child: Container(
-        color: isDark ? AppColors.darkerGrey : AppColors.lightColor,
+        color: isDark ? AppColors.darkerGrey : AppColors.light,
         child: Stack(
           children: [
             /// Main Large Image
@@ -51,8 +51,7 @@ class AppProductImageSlider extends StatelessWidget {
                       const SizedBox(width: AppSize.spaceBtwItems),
                   itemBuilder: (_, index) => AppRoundedImage(
                     width: 80,
-                    backgroundColor:
-                        isDark ? AppColors.darkColor : AppColors.white,
+                    backgroundColor: isDark ? AppColors.dark : AppColors.white,
                     border: Border.all(color: AppColors.primaryColor),
                     padding: const EdgeInsets.all(AppSize.sm),
                     imageUrl: ImageStrings.productImage3,

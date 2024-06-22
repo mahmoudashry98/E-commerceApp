@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 
 import '../../constants/sizes.dart';
 
-
 class TTextFormFieldTheme {
   TTextFormFieldTheme._();
 
@@ -12,10 +11,13 @@ class TTextFormFieldTheme {
     prefixIconColor: AppColors.darkGrey,
     suffixIconColor: AppColors.darkGrey,
     // constraints: const BoxConstraints.expand(height: AppSize.inputFieldHeight),
-    labelStyle: const TextStyle().copyWith(fontSize: AppSize.fontSizeMd, color: AppColors.black),
-    hintStyle: const TextStyle().copyWith(fontSize: AppSize.fontSizeSm, color: AppColors.black),
+    labelStyle: const TextStyle()
+        .copyWith(fontSize: AppSize.fontSizeMd, color: AppColors.black),
+    hintStyle: const TextStyle()
+        .copyWith(fontSize: AppSize.fontSizeSm, color: AppColors.black),
     errorStyle: const TextStyle().copyWith(fontStyle: FontStyle.normal),
-    floatingLabelStyle: const TextStyle().copyWith(color: AppColors.black.withOpacity(0.8)),
+    floatingLabelStyle:
+        const TextStyle().copyWith(color: AppColors.black.withOpacity(0.8)),
     border: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(AppSize.inputFieldRadius),
       borderSide: const BorderSide(width: 1, color: AppColors.grey),
@@ -24,9 +26,9 @@ class TTextFormFieldTheme {
       borderRadius: BorderRadius.circular(AppSize.inputFieldRadius),
       borderSide: const BorderSide(width: 1, color: AppColors.grey),
     ),
-    focusedBorder:const OutlineInputBorder().copyWith(
+    focusedBorder: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(AppSize.inputFieldRadius),
-      borderSide: const BorderSide(width: 1, color: AppColors.darkColor),
+      borderSide: const BorderSide(width: 1, color: AppColors.dark),
     ),
     errorBorder: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(AppSize.inputFieldRadius),
@@ -43,9 +45,12 @@ class TTextFormFieldTheme {
     prefixIconColor: AppColors.darkGrey,
     suffixIconColor: AppColors.darkGrey,
     // constraints: const BoxConstraints.expand(height: AppSize.inputFieldHeight),
-    labelStyle: const TextStyle().copyWith(fontSize: AppSize.fontSizeMd, color: AppColors.white),
-    hintStyle: const TextStyle().copyWith(fontSize: AppSize.fontSizeSm, color: AppColors.white),
-    floatingLabelStyle: const TextStyle().copyWith(color: AppColors.white.withOpacity(0.8)),
+    labelStyle: const TextStyle()
+        .copyWith(fontSize: AppSize.fontSizeMd, color: AppColors.white),
+    hintStyle: const TextStyle()
+        .copyWith(fontSize: AppSize.fontSizeSm, color: AppColors.white),
+    floatingLabelStyle:
+        const TextStyle().copyWith(color: AppColors.white.withOpacity(0.8)),
     border: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(AppSize.inputFieldRadius),
       borderSide: const BorderSide(width: 1, color: AppColors.darkGrey),

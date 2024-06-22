@@ -17,7 +17,7 @@ class TBottomAddToCart extends StatelessWidget {
           horizontal: AppSize.defaultSpacing,
           vertical: AppSize.defaultSpacing / 2),
       decoration: BoxDecoration(
-        color: dark ? AppColors.darkerGrey : AppColors.lightColor,
+        color: dark ? AppColors.darkerGrey : AppColors.light,
         borderRadius: const BorderRadius.only(
           topLeft: Radius.circular(AppSize.cardRadiusLg),
           topRight: Radius.circular(AppSize.cardRadiusLg),

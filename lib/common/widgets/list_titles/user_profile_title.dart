@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/common/widgets/images/app_circular_image.dart';
-import 'package:ecommerce_app/features/auth/screens/profile/profile_screen.dart';
+import 'package:ecommerce_app/features/personalization/screens/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';

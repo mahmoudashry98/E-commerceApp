@@ -1,4 +1,4 @@
-import 'package:ecommerce_app/features/auth/screens/settings/widgets/setting_body.dart';
+import 'package:ecommerce_app/features/personalization/screens/settings/widgets/setting_body.dart';
 import 'package:flutter/material.dart';
 import 'widgets/setting_header.dart';
 

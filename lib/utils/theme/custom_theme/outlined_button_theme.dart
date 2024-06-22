@@ -10,7 +10,7 @@ class TOutlinedButtonTheme {
   static final lightOutlinedButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
       elevation: 0,
-      foregroundColor: AppColors.darkColor,
+      foregroundColor: AppColors.dark,
       side: const BorderSide(color: AppColors.borderPrimaryColor),
       textStyle: const TextStyle(
           fontSize: 16, color: AppColors.black, fontWeight: FontWeight.w600),
@@ -24,7 +24,7 @@ class TOutlinedButtonTheme {
   /* -- Dark Theme -- */
   static final darkOutlinedButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
-      foregroundColor: AppColors.lightColor,
+      foregroundColor: AppColors.light,
       side: const BorderSide(color: AppColors.borderPrimaryColor),
       textStyle: const TextStyle(
           fontSize: 16,

@@ -45,7 +45,7 @@ Widget brandTopProductImageWidget(String image, context) {
       margin: const EdgeInsets.only(right: AppSize.sm),
       backgroundColor: AppHelperFunctions.isDarkMode(context)
           ? AppColors.darkerGrey
-          : AppColors.lightColor,
+          : AppColors.light,
       child: Image(
         fit: BoxFit.contain,
         image: AssetImage(image),

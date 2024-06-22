@@ -1,4 +1,6 @@
+import 'package:ecommerce_app/features/personalization/screens/address/user_address_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../../common/widgets/app_button.dart';
@@ -18,10 +20,11 @@ class AppSettingBody extends StatelessWidget {
           const SectionHeading(
               title: 'Account Settings', showActionButton: false),
           const SizedBox(height: AppSize.spaceBtwItems),
-          const AppSettingsMenuTitle(
+          AppSettingsMenuTitle(
             icon: Iconsax.safe_home,
             title: 'My Addresses',
             subTitle: 'Set shopping delivery address',
+            onTap: () => Get.to(() => const UserAddressScreen()),
           ),
           const AppSettingsMenuTitle(
             icon: Iconsax.shopping_cart,

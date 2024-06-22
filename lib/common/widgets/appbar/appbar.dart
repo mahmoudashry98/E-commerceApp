@@ -35,7 +35,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
                   onPressed: () => Get.back(),
                   icon: Icon(
                     Icons.arrow_back,
-                    color: isDark ? AppColors.white : AppColors.darkColor,
+                    color: isDark ? AppColors.white : AppColors.dark,
                   ),
                 )
               : leadingIcon != null
