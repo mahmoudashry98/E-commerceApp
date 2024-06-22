@@ -35,6 +35,14 @@ class ImageStrings {
   static const String verifyIllustration =
       "assets/images/animations/sammy-line-travel-backpack-with-passport-and-air-ticket.gif";
 
+//User Review
+  static const String userProfileImage1 =
+      'assets/images/reviews/review_profile_image_1.jpg';
+  static const String userProfileImage2 =
+      "assets/images/reviews/review_profile_image_2.jpeg";
+  static const String userProfileImage3 =
+      "  assets/images/reviews/review_profile_image_3.jpeg";
+
 // -- Category Icons
   static const String sportIcon =
       "assets/icons/categories/icons8-bowling-64.png";
