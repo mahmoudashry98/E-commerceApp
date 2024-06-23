@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/common/widgets/appbar/appbar.dart';
 import 'package:ecommerce_app/common/widgets/custom_shapes/contianers/search_container.dart';
 import 'package:ecommerce_app/common/widgets/layouts/gird_layout.dart';
-import 'package:ecommerce_app/common/widgets/products/cart/carts.dart';
+import 'package:ecommerce_app/common/widgets/products/cart/cart_menu_icon.dart';
 import 'package:ecommerce_app/common/widgets/texts/section_heading.dart';
 import 'package:ecommerce_app/features/shop/screens/store/widgets/category_tap.dart';
 import 'package:ecommerce_app/utils/constants/app_colors.dart';
@@ -43,7 +43,7 @@ class StoreScreen extends StatelessWidget {
                       : AppColors.white,
                   expandedHeight: 440,
                   flexibleSpace: Padding(
-                    padding: const EdgeInsets.all(AppSize.defaultSpacing),
+                    padding: const EdgeInsets.all(AppSize.defaultSpace),
                     child: ListView(
                       shrinkWrap: true,
                       physics: const NeverScrollableScrollPhysics(),

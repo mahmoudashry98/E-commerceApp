@@ -25,7 +25,7 @@ class WishListScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(AppSize.defaultSpacing),
+          padding: const EdgeInsets.all(AppSize.defaultSpace),
           child: Column(
             children: [
               AppGridLayout(

@@ -14,7 +14,7 @@ class AppSettingBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(AppSize.defaultSpacing),
+      padding: const EdgeInsets.all(AppSize.defaultSpace),
       child: Column(
         children: [
           const SectionHeading(

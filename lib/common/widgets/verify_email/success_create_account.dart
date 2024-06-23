@@ -28,7 +28,7 @@ class SuccessCreatedAccount extends StatelessWidget {
       ),
       body: const SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(AppSize.defaultSpacing),
+          padding: EdgeInsets.all(AppSize.defaultSpace),
           child: Column(
             children: [
               VerifyEmailHeader(

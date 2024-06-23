@@ -15,7 +15,7 @@ class DotNavSmoothIndicator extends StatelessWidget {
     final controller = OnBoardingController.instance;
     final dark = AppHelperFunctions.isDarkMode(context);
     return Positioned(
-      left: AppSize.defaultSpacing,
+      left: AppSize.defaultSpace,
       bottom: AppDeviceUtils.getBottomNavBarHeight() + 25,
       child: SmoothPageIndicator(
         effect: ExpandingDotsEffect(

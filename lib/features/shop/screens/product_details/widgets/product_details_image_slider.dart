@@ -39,7 +39,7 @@ class AppProductImageSlider extends StatelessWidget {
             Positioned(
               right: 0,
               bottom: 30,
-              left: AppSize.defaultSpacing,
+              left: AppSize.defaultSpace,
               child: SizedBox(
                 height: 80,
                 child: ListView.separated(

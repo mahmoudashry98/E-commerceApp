@@ -14,8 +14,7 @@ class TBottomAddToCart extends StatelessWidget {
     final dark = AppHelperFunctions.isDarkMode(context);
     return Container(
       padding: const EdgeInsets.symmetric(
-          horizontal: AppSize.defaultSpacing,
-          vertical: AppSize.defaultSpacing / 2),
+          horizontal: AppSize.defaultSpace, vertical: AppSize.defaultSpace / 2),
       decoration: BoxDecoration(
         color: dark ? AppColors.darkerGrey : AppColors.light,
         borderRadius: const BorderRadius.only(

@@ -31,9 +31,9 @@ class ProductDetailsScreen extends StatelessWidget {
             /// 2 - Product Details
             Padding(
               padding: const EdgeInsets.only(
-                  right: AppSize.defaultSpacing,
-                  left: AppSize.defaultSpacing,
-                  bottom: AppSize.defaultSpacing),
+                  right: AppSize.defaultSpace,
+                  left: AppSize.defaultSpace,
+                  bottom: AppSize.defaultSpace),
               child: Column(
                 children: [
                   /// Rating & Share Button

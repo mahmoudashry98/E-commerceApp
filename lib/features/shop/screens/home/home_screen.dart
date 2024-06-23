@@ -32,8 +32,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: AppSize.spaceBtwSections),
                   Padding(
-                    padding:
-                        const EdgeInsets.only(left: AppSize.defaultSpacing),
+                    padding: const EdgeInsets.only(left: AppSize.defaultSpace),
                     child: Column(
                       children: [
                         SectionHeading(
@@ -51,7 +50,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(AppSize.defaultSpacing),
+              padding: const EdgeInsets.all(AppSize.defaultSpace),
               child: Column(
                 children: [
                   const AppPromoSlider(

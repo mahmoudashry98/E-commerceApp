@@ -12,7 +12,7 @@ class OnBoardingShip extends StatelessWidget {
   Widget build(BuildContext context) {
     return Positioned(
       top: AppDeviceUtils.getAppBarHeight(),
-      right: AppSize.defaultSpacing,
+      right: AppSize.defaultSpace,
       child: TextButton(
         onPressed: () => OnBoardingController.instance.skipPage(),
         child: const Text(

@@ -14,8 +14,7 @@ class AppSearchContainer extends StatelessWidget {
     this.showBorder = true,
     this.showBackground = true,
     this.onTap,
-    this.padding =
-        const EdgeInsets.symmetric(horizontal: AppSize.defaultSpacing),
+    this.padding = const EdgeInsets.symmetric(horizontal: AppSize.defaultSpace),
   });
 
   final String text;

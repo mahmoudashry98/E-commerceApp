@@ -18,7 +18,7 @@ class ProductReviewsScreen extends StatelessWidget {
           title: Text('Reviews & Ratings'), showBackArrow: true),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(AppSize.defaultSpacing),
+          padding: const EdgeInsets.all(AppSize.defaultSpace),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

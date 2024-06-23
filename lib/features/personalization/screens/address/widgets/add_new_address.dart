@@ -14,7 +14,7 @@ class AddNewAddressScreen extends StatelessWidget {
           showBackArrow: true, title: Text('Add new Address')),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(AppSize.defaultSpacing),
+          padding: const EdgeInsets.all(AppSize.defaultSpace),
           child: Form(
             child: Column(
               children: [
@@ -82,7 +82,7 @@ class AddNewAddressScreen extends StatelessWidget {
                     labelText: 'Country',
                   ),
                 ),
-                const SizedBox(height: AppSize.defaultSpacing),
+                const SizedBox(height: AppSize.defaultSpace),
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(

@@ -26,7 +26,7 @@ class UserAddressScreen extends StatelessWidget {
       ), // TAppBar
       body: const SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(AppSize.defaultSpacing),
+          padding: EdgeInsets.all(AppSize.defaultSpace),
           child: Column(
             children: [
               TSingleAddress(selectedAddress: false),

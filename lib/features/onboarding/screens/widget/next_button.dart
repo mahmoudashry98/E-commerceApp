@@ -12,7 +12,7 @@ class NextButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Positioned(
-      right: AppSize.defaultSpacing,
+      right: AppSize.defaultSpace,
       bottom: AppDeviceUtils.getBottomNavBarHeight(),
       child: ElevatedButton(
         onPressed: () => OnBoardingController.instance.nextPage(),
