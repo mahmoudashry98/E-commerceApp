@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/features/personalization/screens/address/user_address_screen.dart';
+import 'package:ecommerce_app/features/shop/screens/order/order_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -31,10 +32,11 @@ class AppSettingBody extends StatelessWidget {
             title: 'My Cart',
             subTitle: 'Add, remove products and move to checkout',
           ),
-          const AppSettingsMenuTitle(
+          AppSettingsMenuTitle(
             icon: Iconsax.bag_tick,
             title: 'My Orders',
             subTitle: 'In-progress and Completed Orders',
+            onTap: () => Get.to(() => const OrderScreen()),
           ),
           const AppSettingsMenuTitle(
             icon: Iconsax.bank,
