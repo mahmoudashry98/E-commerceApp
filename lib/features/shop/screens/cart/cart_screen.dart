@@ -1,9 +1,12 @@
 import 'package:ecommerce_app/common/widgets/appbar/appbar.dart';
 import 'package:ecommerce_app/common/widgets/texts/product_price_text.dart';
+import 'package:ecommerce_app/features/shop/screens/checkout/checkout_screen.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import '../../../../common/widgets/products/cart/add_remove_button.dart';
 import '../../../../common/widgets/products/cart/cart_item.dart';
+import 'widgets/cart_items.dart';
 
 class CartScreen extends StatelessWidget {
   const CartScreen({super.key});
@@ -15,37 +18,12 @@ class CartScreen extends StatelessWidget {
           showBackArrow: true,
           title:
               Text('Cart', style: Theme.of(context).textTheme.headlineSmall)),
-      body: Padding(
-        padding: const EdgeInsets.all(AppSize.defaultSpace),
-        child: ListView.separated(
-          shrinkWrap: true,
-          itemCount: 10,
-          separatorBuilder: (_, __) =>
-              const SizedBox(height: AppSize.spaceBtwSections),
-          itemBuilder: (_, index) => const Column(
-            children: [
-              AppCardItem(),
-              SizedBox(height: AppSize.spaceBtwItems),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Row(
-                    children: [
-                      SizedBox(width: 70),
-                      AppProductQuantityWithAddRemoveButton(),
-                    ],
-                  ),
-                  TProductPriceText(price: '256')
-                ],
-              )
-            ],
-          ),
-        ),
-      ),
+      body: const Padding(
+          padding: EdgeInsets.all(AppSize.defaultSpace), child: AppCartItems()),
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(AppSize.defaultSpace),
         child: ElevatedButton(
-          onPressed: () {},
+          onPressed: () => Get.to(const CheckoutScreen()),
           child: const Text('Checkout \$256.0'),
         ),
       ),
