@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/utils/constants/image_strings.dart';
 import 'package:flutter/material.dart';
 
 import '../../../utils/constants/app_colors.dart';
@@ -10,7 +11,7 @@ class VerticalImageText extends StatelessWidget {
     // required this.image,
     required this.title,
     this.textColor = AppColors.white,
-    this.backgroundColor = AppColors.white,
+    this.backgroundColor,
     required this.onTap,
   });
 
@@ -37,12 +38,10 @@ class VerticalImageText extends StatelessWidget {
                     (isDarkMode ? AppColors.black : AppColors.white),
                 borderRadius: BorderRadius.circular(100),
               ),
-              child: Center(
+              child: const Center(
                 child: Image(
-                  image: const AssetImage(
-                      "assets/icons/categories/icons8-shoes-64.png"),
+                  image: AssetImage(ImageStrings.productImage1),
                   fit: BoxFit.cover,
-                  color: isDarkMode ? AppColors.light : AppColors.dark,
                 ),
               ),
             ),
@@ -51,7 +50,7 @@ class VerticalImageText extends StatelessWidget {
               width: 55,
               child: Text(
                 title,
-                style: Theme.of(context).textTheme.bodySmall!.apply(
+                style: Theme.of(context).textTheme.labelSmall!.apply(
                       color: textColor,
                     ),
                 maxLines: 1,

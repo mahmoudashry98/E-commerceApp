@@ -12,7 +12,7 @@ class HomeCategories extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 80,
+      height: 120,
       child: ListView.builder(
         shrinkWrap: true,
         itemCount: 6,
@@ -21,6 +21,7 @@ class HomeCategories extends StatelessWidget {
           return VerticalImageText(
             onTap: () => Get.to(const SubCategoriesScreen()),
             title: 'Shoes Category',
+            
           );
         },
       ),
