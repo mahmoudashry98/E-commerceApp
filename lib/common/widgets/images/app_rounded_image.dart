@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/utils/helpers/helper_funcation.dart';
 import 'package:flutter/material.dart';
 
 import '../../../utils/constants/app_colors.dart';
@@ -13,8 +14,8 @@ class AppRoundedImage extends StatelessWidget {
     this.height,
     this.applyImageRadius = true,
     required this.imageUrl,
-    this.backgroundColor = AppColors.light,
     this.fit = BoxFit.contain,
+    this.backgroundColor = AppColors.light,
     this.isNetworkImage = false,
     this.borderRadius = AppSize.md,
   });
@@ -32,17 +33,17 @@ class AppRoundedImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isDarkMode = AppHelperFunctions.isDarkMode(context);
     return GestureDetector(
       onTap: onPressed,
       child: Container(
-        height: height,
         width: width,
+        height: height,
         padding: padding,
-        margin: const EdgeInsets.all(5),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(borderRadius),
           border: border,
-          color: backgroundColor,
+          color: isDarkMode ? AppColors.dark : AppColors.light,
         ),
         child: ClipRRect(
           borderRadius: applyImageRadius
@@ -54,7 +55,7 @@ class AppRoundedImage extends StatelessWidget {
                 : AssetImage(
                     imageUrl,
                   ) as ImageProvider,
-            fit: BoxFit.contain,
+            fit: fit,
           ),
         ),
       ),

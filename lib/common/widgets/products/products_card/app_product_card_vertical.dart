@@ -28,10 +28,10 @@ class AppProductCardVertical extends StatelessWidget {
       },
       child: Container(
         width: 180,
-        padding: const EdgeInsets.all(1),
+        // padding: const EdgeInsets.all(1),
         decoration: BoxDecoration(
           boxShadow: [ShadowStyle.verticalProductShadow],
-          borderRadius: BorderRadius.circular(AppSize.lg),
+          borderRadius: BorderRadius.circular(AppSize.md),
           color: isDarkMode ? AppColors.darkerGrey : AppColors.white,
         ), // BoxDecoration
         child: Column(
@@ -44,6 +44,8 @@ class AppProductCardVertical extends StatelessWidget {
                 children: [
                   const AppRoundedImage(
                     imageUrl: ImageStrings.productImage1,
+                    width: 150,
+                    height: 158,
                     applyImageRadius: true,
                   ),
                   Positioned(
@@ -56,9 +58,10 @@ class AppProductCardVertical extends StatelessWidget {
                           horizontal: AppSize.sm, vertical: AppSize.xs),
                       child: Text(
                         '25%',
-                        style: Theme.of(context).textTheme.labelLarge!.apply(
-                              color: AppColors.black,
-                            ),
+                        style: Theme.of(context)
+                            .textTheme
+                            .labelLarge!
+                            .apply(color: AppColors.black),
                       ),
                     ),
                   ),

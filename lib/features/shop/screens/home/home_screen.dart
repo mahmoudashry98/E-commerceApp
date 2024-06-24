@@ -1,6 +1,8 @@
+import 'package:ecommerce_app/features/shop/screens/all_products/all_products_screen.dart';
 import 'package:ecommerce_app/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:ecommerce_app/utils/constants/image_strings.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import '../../../../common/widgets/custom_shapes/contianers/primary_header_container.dart';
 import '../../../../common/widgets/custom_shapes/contianers/search_container.dart';
 import '../../../../common/widgets/layouts/gird_layout.dart';
@@ -62,6 +64,13 @@ class HomeScreen extends StatelessWidget {
                   ),
                   const SizedBox(
                     height: AppSize.spaceBtwSections,
+                  ),
+                  SectionHeading(
+                    title: 'Popular Products',
+                    onPressed: () => Get.to(const AllProducts()),
+                  ),
+                  const SizedBox(
+                    height: AppSize.spaceBtwItems,
                   ),
                   AppGridLayout(
                     itemCount: 4,
