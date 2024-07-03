@@ -4,5 +4,13 @@
     "titleBar.activeBackground": "#5B353D",
     "titleBar.activeForeground": "#FCF9FA"
   },
-  "cSpell.words": ["Appbar", "Bezier", "ecommerce", "Getx", "Iconsax", "Reclip"]
+  "cSpell.words": [
+    "Appbar",
+    "Bezier",
+    "ecommerce",
+    "Getx",
+    "Iconsax",
+    "Reclip"
+  ],
+  "java.configuration.updateBuildConfiguration": "interactive"
 }

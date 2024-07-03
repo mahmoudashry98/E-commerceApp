@@ -2,6 +2,7 @@ import 'package:ecommerce_app/common/widgets/text_form_field.dart';
 import 'package:ecommerce_app/common/widgets/verify_email/verify_email.dart';
 import 'package:ecommerce_app/utils/helpers/helper_funcation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -86,43 +87,45 @@ class SignUpBody extends StatelessWidget {
                     width: 24,
                     height: 24,
                     child: Checkbox(value: true, onChanged: (value) {})),
-                const SizedBox(width: AppSize.spaceBtwItems),
-                Text.rich(
-                  TextSpan(
-                    children: [
-                      TextSpan(
-                        text: '${AppStrings.iAgreeTo} ',
-                        style: Theme.of(context).textTheme.bodySmall,
-                      ),
-                      TextSpan(
-                        text: AppStrings.privacyPolicy,
-                        style: Theme.of(context).textTheme.bodyMedium!.apply(
-                              color: dark
-                                  ? AppColors.white
-                                  : AppColors.primaryColor,
-                              decoration: TextDecoration.underline,
-                              decorationColor: dark
-                                  ? AppColors.white
-                                  : AppColors.primaryColor,
-                            ),
-                      ),
-                      TextSpan(
-                        text: '${AppStrings.and} ',
-                        style: Theme.of(context).textTheme.bodySmall,
-                      ),
-                      TextSpan(
-                        text: AppStrings.termsOfUse,
-                        style: Theme.of(context).textTheme.bodyMedium!.apply(
-                              color: dark
-                                  ? AppColors.white
-                                  : AppColors.primaryColor,
-                              decoration: TextDecoration.underline,
-                              decorationColor: dark
-                                  ? AppColors.white
-                                  : AppColors.primaryColor,
-                            ),
-                      ),
-                    ],
+                const SizedBox(width: AppSize.spaceBtwItems / 2),
+                Expanded(
+                  child: Text.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                          text: '${AppStrings.iAgreeTo} ',
+                          style: Theme.of(context).textTheme.bodySmall,
+                        ),
+                        TextSpan(
+                          text: AppStrings.privacyPolicy,
+                          style: Theme.of(context).textTheme.bodyMedium!.apply(
+                                color: dark
+                                    ? AppColors.white
+                                    : AppColors.primaryColor,
+                                decoration: TextDecoration.underline,
+                                decorationColor: dark
+                                    ? AppColors.white
+                                    : AppColors.primaryColor,
+                              ),
+                        ),
+                        TextSpan(
+                          text: ' ${AppStrings.and} ',
+                          style: Theme.of(context).textTheme.bodySmall,
+                        ),
+                        TextSpan(
+                          text: AppStrings.termsOfUse,
+                          style: Theme.of(context).textTheme.bodyMedium!.apply(
+                                color: dark
+                                    ? AppColors.white
+                                    : AppColors.primaryColor,
+                                decoration: TextDecoration.underline,
+                                decorationColor: dark
+                                    ? AppColors.white
+                                    : AppColors.primaryColor,
+                              ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ],

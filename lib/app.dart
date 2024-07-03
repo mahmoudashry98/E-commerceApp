@@ -2,7 +2,7 @@ import 'package:ecommerce_app/utils/constants/app_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
-import 'features/onboarding/screens/onboarding.dart';
+import 'utils/constants/app_colors.dart';
 import 'utils/theme/theme.dart';
 
 class MyApp extends StatelessWidget {
@@ -17,15 +17,14 @@ class MyApp extends StatelessWidget {
       darkTheme: TAppTheme.darkTheme,
       debugShowCheckedModeBanner: false,
       // initialBinding: GeneralBindings(),
-      home: const OnBoardingScreen(),
-      // home: const Scaffold(
-      //   body: Center(
-      //     child: Text(
-      //       'Awesome! 🎊 Project Structure is set up and running. \n Happy T Coding 🎊',
-      //       textAlign: TextAlign.center,
-      //     ),
-      //   ),
-      // ),
+
+      home: const Scaffold(
+        backgroundColor: AppColors.primaryColor,
+        body: Center(
+            child: CircularProgressIndicator(
+          color: AppColors.white,
+        )),
+      ),
     );
   }
 }
