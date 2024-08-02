@@ -6,6 +6,9 @@ class TextFormFieldWidget extends StatelessWidget {
   final String labelText;
   final TextStyle labelStyle;
   final Widget? suffixIcon;
+  final TextInputType? keyboardType;
+  final TextEditingController? controller;
+  final String? Function(String?)? validator;
 
   const TextFormFieldWidget({
     super.key,
@@ -13,11 +16,17 @@ class TextFormFieldWidget extends StatelessWidget {
     required this.labelText,
     required this.labelStyle,
     this.suffixIcon,
+    this.keyboardType,
+    this.controller,
+    this.validator,
   });
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: controller,
+      keyboardType: keyboardType,
+      validator:validator,
       decoration: InputDecoration(
         prefixIcon: prefixIcon,
         labelText: labelText,
